@@ -22,6 +22,8 @@
         <li th:each="book: ${listBook}">
             <div th:text="${book.name}"></div>
             <div th:text="${book.author}"></div>
+            <div th:text="${book.genre}"></div>
+            <div th:text="${book.publisher.name}"></div>
         </li>
     </ul>
 </form>
